@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Cadastro de Usuários</h1>
+
+    <form id="formCadastro">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="idade" placeholder="Idade" required>
+        <select id="status" required>
+            <option value="">Selecione o Status</option>
+            <option value="true">Ativo</option>
+            <option value="false">Inativo</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Lista de Usuários</h2>
+    <table id="tabelaUsuarios">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Idade</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os usuários serão adicionados aqui -->
+        </tbody>
+    </table>
+
+    <script src="tarefa.js"></script>
+</body>
+</html>
+
